@@ -11,7 +11,7 @@ const client = new Client({
 client.on('ready', () => {
   // schedule.scheduleJob("* * * * * *", () => {
   // });
-  schedule.scheduleJob("0 45 8 * * *", () => {
+  schedule.scheduleJob("0 45 8 * * 1-5", () => {
     const prefix = "> ";
     const message = [
       "다들 입실해주세요😎",
