@@ -36,7 +36,7 @@ client.on('ready', () => {
   schedule.scheduleJob("0 20 11,15 * * 1-5", () => {
     client.channels.cache.get(process.env.ALARM_CHANNEL).send(`> 째깍이🕰가 울린지 **20분**이 지났어요!\n> __로그인 상태__ ☑️`);
   });
-  schedule.scheduleJob("0 0 18 * * *", () => {
+  schedule.scheduleJob("0 0 18 * * 1-5", () => {
     const prefix = "> ";
     const message = [
       "끝났습니다~ 다들 퇴실해주세요😎",
