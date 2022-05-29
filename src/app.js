@@ -30,9 +30,9 @@ client.on('ready', () => {
   }
   voidHoliday(); // 휴일 확인
 
-  schedule.scheduleJob("* * * * * *", () => {
-    client.channels.cache.get(process.env.ALARM_CHANNEL).send("⏰");
-  });
+  // schedule.scheduleJob("* * * * * *", () => {
+  //   client.channels.cache.get(process.env.ALARM_CHANNEL).send("⏰");
+  // });
 
   // 공휴일 설정
   schedule.scheduleJob("0 30 8 * * 1-5", () => {
