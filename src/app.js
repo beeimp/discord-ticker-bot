@@ -22,7 +22,7 @@ client.on('ready', () => {
       .map((value) => value.replace('.', ''));
 
     holidayData.forEach(holiday => {
-      if(holiday.month == nowDate[1] && holiday.date === nowDate[2]){
+      if(holiday.month == nowDate[1] && holiday.date == nowDate[2]){
         isAlarm = false;
         holidayName = holiday.name;
       }
